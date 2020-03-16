@@ -10,6 +10,9 @@ function HotelScreen({ navigation }) {
         <Text>Wassup</Text>
         <Cardview />
         <Btn/>
+        <Btn/>
+        <Btn/>
+        <Btn/>
       </View>
     );
   }
