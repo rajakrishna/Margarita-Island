@@ -1,35 +1,53 @@
 import * as React from 'react';
-import { View, Text, Button } from 'react-native';
+import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import HomeScreen from './components/HomeScreen'
+import { MaterialCommunityIcons } from 'react-native-vector-icons';
 
+// function HomeScreen() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+//       <Text>Home!</Text>
+//     </View>
+//   );
+// }
 
-function DetailsScreen({ navigation }) {
+function SettingsScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Details Screen</Text>
-      <Button
-        title="Go to Home"
-        onPress={() => navigation.goBack()}
-      />
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Settings!</Text>
     </View>
   );
 }
 
+const Tab = createMaterialBottomTabNavigator();
 
-const Stack = createStackNavigator();
-
-function App() {
+export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Title 1' }}/>
-        <Stack.Screen name="Details" component={DetailsScreen} options={{ title: 'Detail' }}/>
-      </Stack.Navigator>
+      <Tab.Navigator 
+        initialRouteName = "Home"
+        activeColor = "#e2f3f5"
+        inactiveColor = "#3e3636"
+        barStyle= {{ backgroundColor: '#3d5af1' }}
+        shifting = {true}
+        >
+
+
+
+        <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="home" color={color} size={26} />
+          ),
+        }}
+      />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
-
-
-export default App;
