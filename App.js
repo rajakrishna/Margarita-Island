@@ -24,10 +24,10 @@ const App = () =>{
         initialRouteName = "Hotel"
         activeColor = "#e2f3f5"
         inactiveColor = "#3e3636"
-        barStyle= {{ backgroundColor: '#3d5af1' }}
+        barStyle= {{ backgroundColor: '#2d6cdf' }}
         shifting = {true}
         keyboardHidesNavigationBar = {true}
-        barStyle={{ size:100 }}
+        // barStyle={{ size:100 }}
         >
 
         <Tab.Screen
