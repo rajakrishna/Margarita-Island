@@ -21,7 +21,7 @@ const App = () =>{
   return (
     <NavigationContainer>
       <Tab.Navigator 
-        initialRouteName = "Profile"
+        initialRouteName = "Hotel"
         activeColor = "#e2f3f5"
         inactiveColor = "#3e3636"
         barStyle= {{ backgroundColor: '#3d5af1' }}
