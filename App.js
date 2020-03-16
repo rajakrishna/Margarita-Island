@@ -2,19 +2,18 @@ import * as React from 'react';
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import HomeScreen from './components/HomeScreen'
 import { MaterialCommunityIcons } from 'react-native-vector-icons';
-import { Fontisto } from 'react-native-vector-icons';
+// import { Fontisto } from 'react-native-vector-icons';
+import HotelScreen from './components/HotelScreen'
+import ProfileScreen from './components/ProfileScreen'
+import DiningScreen from './components/DiningScreen'
+import ServiceScreen from './components/ServiceScreen'
+import EventScreen from './components/EventScreen'
+import IslandScreen from './components/IslandScreen'
 
 
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
+
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -22,32 +21,76 @@ const App = () =>{
   return (
     <NavigationContainer>
       <Tab.Navigator 
-        initialRouteName = "Settings"
+        initialRouteName = "Profile"
         activeColor = "#e2f3f5"
         inactiveColor = "#3e3636"
         barStyle= {{ backgroundColor: '#3d5af1' }}
         shifting = {true}
+        keyboardHidesNavigationBar = {true}
+        barStyle={{ size:100 }}
         >
 
         <Tab.Screen
-        name="Home"
-        component={HomeScreen}
+        name="Hotel"
+        component={HotelScreen}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Hotel',
+          // tabBarColor: 'black',
           tabBarIcon: ({ color }) => (          
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="hotel" color={color} size={26} />
           ),
         }}
       />
 
       <Tab.Screen
-        name="Settings"
-        component={SettingsScreen}
+        name="Dining"
+        component={DiningScreen}
         options={{
-          tabBarLabel: 'Settings',
-          tabBarIcon: ({ color }) => (
-            // <Fontisto name="island" color='{color}' size={26} />  
+          tabBarLabel: 'Dining',
+          tabBarIcon: ({ color }) => (          
+            <MaterialCommunityIcons name="food" color={color} size={26} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Islands"
+        component={IslandScreen}
+        options={{
+          tabBarLabel: 'Island',
+          tabBarIcon: ({ color }) => (          
+            <MaterialCommunityIcons name="tree" color={color} size={26} />
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name="Events"
+        component={EventScreen}
+        options={{
+          tabBarLabel: 'Events',
+          tabBarIcon: ({ color }) => (          
+            <MaterialCommunityIcons name="calendar" color={color} size={26} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Services"
+        component={ServiceScreen}
+        options={{
+          tabBarLabel: 'Services',
+          tabBarIcon: ({ color }) => (          
             <MaterialCommunityIcons name="settings" color={color} size={26} />
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={{
+          tabBarLabel: 'Profile',
+          tabBarIcon: ({ color }) => ( 
+            <MaterialCommunityIcons name="account-settings" color={color} size={26} />
           ),
         }}
       />
