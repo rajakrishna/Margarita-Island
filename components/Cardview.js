@@ -1,18 +1,17 @@
 import * as React from 'react';
+import {Text, View} from 'react-native';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const CardView = () => (
-  <Card>
-    {/* <Card.Title title="Card Title" subtitle="Card Subtitle" left={(props) => <Avatar.Icon {...props} icon="folder" />} /> */}
-    <Card.Content>
-      <Title>Card title</Title>
-    </Card.Content>
-    <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
-    {/* <Card.Actions>
-      <Button>Cancel</Button>
-      <Button>Ok</Button>
-    </Card.Actions> */}
-  </Card>
+  <View style={{justifyContent:'center',alignContent:'center',flex:1,paddingLeft:'30%'}} >
+    <TouchableOpacity activeOpacity={0.7} >
+      <Card  onPress = {() =>{console.log('Hello')}} style={{justifyContent:'center',alignContent:'center', width: 150}}>      
+        <Card.Cover source={{ uri: 'https://picsum.photos/700' }} style={{width: 150 , height: 150, borderRadius: 12}}/>
+        <Text style={{justifyContent:'center',alignItems:'center',flex:1}}>hekllo</Text>
+      </Card> 
+    </TouchableOpacity>
+  </View>
 );
 
 export default CardView;
