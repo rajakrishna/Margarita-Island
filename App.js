@@ -30,6 +30,7 @@ const App = () =>{
         // barStyle={{ size:100 }}
         >
 
+          
         <Tab.Screen
         name="Hotel"
         component={HotelScreen}
