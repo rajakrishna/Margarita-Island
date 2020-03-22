@@ -8,7 +8,7 @@ const CardView = (props) => {
 
   return (
   <View style={styles.container}>
-  <Card onPress ={props.comk} style={{ borderRadius: 20, width : 150, height: 180}} >
+  <Card onPress ={props.comk} style={{ borderRadius: 20, width : 150, height: 180, elevation: 3}} >
     <View style={{ alignItems: 'center', }}>
       <Image
         source={{uri: props.link }}  
@@ -30,14 +30,12 @@ const CardView = (props) => {
 
 
 
-
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     paddingTop: 30,
-    backgroundColor: '#ecf0f1',
+    // backgroundColor: '#ecf0f1',
     padding: 8,
   },
   paragraph: {
