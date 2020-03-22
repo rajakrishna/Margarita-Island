@@ -16,7 +16,8 @@ import VerticalList from './VerticalList'
 
 const home = ({navigation})=> {
   return (
-      <View style={styles.container}>        
+      <View style={styles.container}> 
+        <ScrollView showsVerticalScrollIndicator={false}> 
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >   
           <Cardview link="https://picsum.photos/700" name="Louis Backyard" comk={()=>{navigation.navigate('Details')}} />
           <Cardview link="https://picsum.photos/100" name="Xbox"/>
@@ -24,16 +25,25 @@ const home = ({navigation})=> {
           <Cardview link="https://picsum.photos/101" name="KFC"/>
           <Cardview link="https://picsum.photos/110" name="Mc D"/>
           <Cardview link="https://picsum.photos/104" name="Pho"/>
-
-        </ScrollView>
+          </ScrollView>
+          
+        
         <View>
-          <Text>Hello</Text>
-          <ScrollView>
+          <Text>Top Chefs</Text>
+          {/* <ScrollView showsVerticalScrollIndicator={false}> */}
 
           <VerticalList link="https://picsum.photos/700" name="Louis Backyard"/>
+          <VerticalList link="https://picsum.photos/106" name="Louis Backyard"/>
+          <VerticalList link="https://picsum.photos/706" name="Louis Backyard"/>
+          <VerticalList link="https://picsum.photos/70" name="Louis Backyard"/>
+          <VerticalList link="https://picsum.photos/106" name="Louis Backyard"/>
+          <VerticalList link="https://picsum.photos/706" name="Louis Backyard"/>
 
-          </ScrollView>
+          {/* </ScrollView> */}
+          
         </View>
+        
+        </ScrollView>
     </View>
   );
 }

@@ -9,7 +9,7 @@ const VerticalList = (props) => {
 
   return (
   <View style={styles.container}>
-  <Card onPress ={props.comk} style={{ borderRadius: 20, width : size, height: 150, elevation: 3}}>
+  <Card onPress ={props.comk} style={{ borderRadius: 20, width : size, height: 100, elevation: 1}}>
     {/* <View style={{ alignItems: 'center', }}> */}
 
     <View style={{flexDirection:'row'}}>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     // flex: 1,
     // flexDirection:'row',
     // justifyContent: 'center',
-    paddingTop: 30,
+    paddingTop: 5,
     // backgroundColor: '#ecf0f1',
     padding: 8,
   },
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
   },
 
   image:{
-    width: 150,
-    height: 150,
+    width: 120,
+    height: 100,
     borderRadius: 20, 
   },
 
