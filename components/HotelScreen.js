@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView, StyleSheet } from 'react-native';
 import Details from './Details'
 import Cardview from './Cardview'
 import Btn from './Button'
+import LinearGradient from 'react-native-linear-gradient';
 
 function HotelScreen({ navigation }) {
     return (
@@ -24,11 +25,14 @@ function HotelScreen({ navigation }) {
         <Btn/> */}
       </ScrollView>
       <View>
-        <Btn/>
+        {/* <Btn/> */}
+        <Text>Hello</Text>
+
       </View>
       </View>
     );
   }
+
 
 export default HotelScreen;
 

@@ -19,7 +19,8 @@ const CardView = () => (
       <Image
         source={{
           uri:
-            'https://picsum.photos/700',
+            // 'https://picsum.photos/700',
+            'https://picsum.photos/id/10/150/150',
         }}
         style={{
           width: 150,
