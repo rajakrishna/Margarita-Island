@@ -6,12 +6,14 @@ import Btn from './Button'
 
 function HotelScreen({ navigation }) {
     return (
-      <ScrollView>
-        <Text>Wassup</Text>
+        <View>
+          {/* <Text>Wassup</Text> */}
+        
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
+        
         <Cardview />
         <Cardview />
         <Cardview />
-
         <Cardview />
         <Cardview />
         <Cardview />
@@ -21,6 +23,10 @@ function HotelScreen({ navigation }) {
         <Btn/>
         <Btn/> */}
       </ScrollView>
+      <View>
+        <Btn/>
+      </View>
+      </View>
     );
   }
 

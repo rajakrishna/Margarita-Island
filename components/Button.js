@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const Btn = () => (
     <View style={styles.red}>
-  <Button mode="contained" onPress={() => console.log('Pressed')} style={styles.bigBlue}>
+  <Button mode="contained" onPress={() => console.log('Clicked on button')} style={styles.bigBlue}>
     Press Me
   </Button>
   </View>
