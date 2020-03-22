@@ -5,7 +5,7 @@ import Cardview from './Cardview'
 import Btn from './Button'
 import LinearGradient from 'react-native-linear-gradient';
 
-function HotelScreen({ navigation }) {
+function HotelScreen() {
     return (
         <View>
           {/* <Text>Wassup</Text> */}
