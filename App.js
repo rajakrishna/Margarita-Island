@@ -1,11 +1,8 @@
-import * as React from 'react';
-import BottomNavigation from './components/BottomNavigation'
+import * as React from "react";
+import BottomNavigation from "./components/BottomNavigation";
 
-
-const App = () =>{
-  return (
-    <BottomNavigation/>
-  );
-}
+const App = () => {
+	return <BottomNavigation />;
+};
 
 export default App;
