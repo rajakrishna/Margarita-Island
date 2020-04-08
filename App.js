@@ -4,7 +4,7 @@ import Firebase from "./components/Firebase";
 import Form from "./components/Form";
 
 const App = () => {
-	return <Form />;
+	return <BottomNavigation />;
 };
 
 export default App;
