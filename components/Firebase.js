@@ -1,6 +1,6 @@
 import * as firebase from "firebase";
 
-const Firebase = {
+const config = {
 	apiKey: "AIzaSyCn4kww7uA_kPkroZS9hXPkuCvhDDq1WKc",
 	authDomain: "margarita-island-8e170.firebaseapp.com",
 	databaseURL: "https://margarita-island-8e170.firebaseio.com",
@@ -12,8 +12,8 @@ const Firebase = {
 };
 
 if (!firebase.apps.length) {
-	firebase.initializeApp(Firebase);
+	firebase.initializeApp(config);
 }
 // firebase.initializeApp(config);
 
-export default Firebase;
+export default config;
