@@ -10,6 +10,8 @@ import {
 
 import * as firebase from "firebase";
 
+// Use your own Api from firebase
+
 const config = {
 	apiKey: "AIzaSyCn4kww7uA_kPkroZS9hXPkuCvhDDq1WKc",
 	authDomain: "margarita-island-8e170.firebaseapp.com",
