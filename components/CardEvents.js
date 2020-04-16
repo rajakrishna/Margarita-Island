@@ -7,16 +7,12 @@ const CardEvents = (props) => {
 		<Card
 			onPress={props.comk}
 			style={{
-				borderRadius: 20,
-				width: "90%",
+				// borderRadius: 20,
+				width: "97%",
 			}}
 		>
-			<Card.Cover source={{ uri: props.link }} style={{ borderRadius: 20 }} />
-			<Card.Title
-				title="Card Title"
-				subtitle="Card Subtitle"
-				style={{ borderRadius: 20 }}
-			/>
+			<Card.Cover source={{ uri: props.link }} />
+			<Card.Title title="Card Title" subtitle="Card Subtitle" />
 		</Card>
 	);
 };
