@@ -15,7 +15,7 @@ const BottomNavigation = () => {
 	return (
 		<NavigationContainer>
 			<Tab.Navigator
-				initialRouteName="Hotel"
+				initialRouteName="Events"
 				activeColor="#e2f3f5"
 				inactiveColor="#3e3636"
 				barStyle={{ backgroundColor: "#2d6cdf" }}
@@ -31,7 +31,7 @@ const BottomNavigation = () => {
 						// tabBarColor: 'black',
 						tabBarIcon: ({ color }) => (
 							<MaterialCommunityIcons name="hotel" color={color} size={26} />
-						)
+						),
 					}}
 				/>
 
@@ -42,7 +42,7 @@ const BottomNavigation = () => {
 						tabBarLabel: "Dining",
 						tabBarIcon: ({ color }) => (
 							<MaterialCommunityIcons name="food" color={color} size={26} />
-						)
+						),
 					}}
 				/>
 				<Tab.Screen
@@ -52,7 +52,7 @@ const BottomNavigation = () => {
 						tabBarLabel: "Island",
 						tabBarIcon: ({ color }) => (
 							<MaterialCommunityIcons name="tree" color={color} size={26} />
-						)
+						),
 					}}
 				/>
 
@@ -63,7 +63,7 @@ const BottomNavigation = () => {
 						tabBarLabel: "Events",
 						tabBarIcon: ({ color }) => (
 							<MaterialCommunityIcons name="calendar" color={color} size={26} />
-						)
+						),
 					}}
 				/>
 				<Tab.Screen
@@ -73,7 +73,7 @@ const BottomNavigation = () => {
 						tabBarLabel: "Services",
 						tabBarIcon: ({ color }) => (
 							<MaterialCommunityIcons name="settings" color={color} size={26} />
-						)
+						),
 					}}
 				/>
 
@@ -88,7 +88,7 @@ const BottomNavigation = () => {
 								color={color}
 								size={26}
 							/>
-						)
+						),
 					}}
 				/>
 			</Tab.Navigator>
