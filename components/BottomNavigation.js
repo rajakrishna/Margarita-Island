@@ -15,7 +15,7 @@ const BottomNavigation = () => {
 	return (
 		<NavigationContainer>
 			<Tab.Navigator
-				initialRouteName="Events"
+				initialRouteName="Hotel"
 				activeColor="#e2f3f5"
 				inactiveColor="#3e3636"
 				barStyle={{ backgroundColor: "#2d6cdf" }}

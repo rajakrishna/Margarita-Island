@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, Image } from "react-native";
 import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-const CardView = props => {
+const CardView = (props) => {
 	return (
 		<View style={styles.container}>
 			<Card
@@ -16,7 +16,7 @@ const CardView = props => {
 						style={{
 							width: 150,
 							height: 150,
-							borderRadius: 20
+							borderRadius: 20,
 						}}
 					/>
 				</View>
@@ -30,9 +30,9 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		justifyContent: "center",
-		paddingTop: 30,
+		// paddingTop: 30,
 		// backgroundColor: '#ecf0f1',
-		padding: 8
+		padding: 8,
 	},
 
 	paragraph: {
@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		textShadowColor: "rgba(0, 0, 0, 0.75)",
 		textShadowOffset: { width: 2, height: 2 },
-		textShadowRadius: 10
-	}
+		textShadowRadius: 10,
+	},
 });
 
 export default CardView;
