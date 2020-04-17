@@ -15,8 +15,8 @@ import VerticalList from "./VerticalList";
 const DiningScreen = ({ navigation }) => {
 	return (
 		<View style={styles.container}>
-			<Text>Top Chefs</Text>
 			<ScrollView showsVerticalScrollIndicator={false}>
+				<Text>Top Chefs</Text>
 				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 					<Cardview
 						link="https://picsum.photos/700"

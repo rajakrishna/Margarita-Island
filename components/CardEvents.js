@@ -15,6 +15,7 @@ const CardEvents = (props) => {
 const styles = StyleSheet.create({
 	card: {
 		marginTop: 10,
+		elevation: 2,
 	},
 });
 

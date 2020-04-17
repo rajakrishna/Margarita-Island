@@ -10,7 +10,7 @@ const VerticalList = (props) => {
 		<View style={styles.container}>
 			<Card
 				onPress={props.comk}
-				style={{ borderRadius: 20, width: size, height: 100, elevation: 1 }}
+				style={{ borderRadius: 8, width: size, height: 100, elevation: 1 }}
 			>
 				{/* <View style={{ alignItems: 'center', }}> */}
 
@@ -21,8 +21,12 @@ const VerticalList = (props) => {
       /> */}
 					<Card.Cover source={{ uri: props.link }} style={styles.image} />
 					<View style={{ flexDirection: "column" }}>
-						<Text style={styles.title}>{props.name}</Text>
-						<Text style={styles.below}> yeah </Text>
+						{/* <Text style={styles.title}>{props.name}</Text>
+						<Text style={styles.below}> yeah </Text> */}
+						<Card.Content>
+							<Title>{props.name}</Title>
+							<Paragraph>Location</Paragraph>
+						</Card.Content>
 					</View>
 				</View>
 			</Card>
@@ -56,7 +60,7 @@ const styles = StyleSheet.create({
 	image: {
 		width: 120,
 		height: 100,
-		borderRadius: 20,
+		borderRadius: 8,
 	},
 });
 

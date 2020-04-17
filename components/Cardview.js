@@ -8,7 +8,7 @@ const CardView = (props) => {
 		<View style={styles.container}>
 			<Card
 				onPress={props.comk}
-				style={{ borderRadius: 20, width: 150, height: 150, elevation: 3 }}
+				style={{ borderRadius: 20, width: 150, height: 150, elevation: 2 }}
 			>
 				<View style={{ alignItems: "center" }}>
 					<Card.Cover source={{ uri: props.link }} style={styles.image} />
@@ -28,21 +28,21 @@ const styles = StyleSheet.create({
 	image: {
 		width: 150,
 		height: 150,
-		borderRadius: 20,
+		borderRadius: 8,
 	},
 
 	paragraph: {
 		marginBottom: 4,
 		position: "absolute",
 		bottom: 0,
-		left: "10%",
+		left: "7%",
 		// backgroundColor: 'white',
 		alignContent: "center",
 		color: "white",
 		fontSize: 17,
 		fontWeight: "bold",
 		// textAlign: "center",
-		textShadowColor: "rgba(0, 0, 0, 0.5)",
+		textShadowColor: "rgba(0, 0, 0, 0.35)",
 		textShadowOffset: { width: 0, height: 2 },
 		textShadowRadius: 2,
 	},
