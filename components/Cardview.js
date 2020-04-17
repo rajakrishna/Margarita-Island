@@ -11,14 +11,7 @@ const CardView = (props) => {
 				style={{ borderRadius: 20, width: 150, height: 150, elevation: 3 }}
 			>
 				<View style={{ alignItems: "center" }}>
-					<Image
-						source={{ uri: props.link }}
-						style={{
-							width: 150,
-							height: 150,
-							borderRadius: 20,
-						}}
-					/>
+					<Card.Cover source={{ uri: props.link }} style={styles.image} />
 				</View>
 				<Text style={styles.paragraph}>{props.name}</Text>
 			</Card>
@@ -30,9 +23,12 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		justifyContent: "center",
-		// paddingTop: 30,
-		// backgroundColor: '#ecf0f1',
 		padding: 8,
+	},
+	image: {
+		width: 150,
+		height: 150,
+		borderRadius: 20,
 	},
 
 	paragraph: {
@@ -45,10 +41,10 @@ const styles = StyleSheet.create({
 		color: "white",
 		fontSize: 17,
 		fontWeight: "bold",
-		textAlign: "center",
-		textShadowColor: "rgba(0, 0, 0, 0.75)",
-		textShadowOffset: { width: 2, height: 2 },
-		textShadowRadius: 10,
+		// textAlign: "center",
+		textShadowColor: "rgba(0, 0, 0, 0.5)",
+		textShadowOffset: { width: 0, height: 2 },
+		textShadowRadius: 2,
 	},
 });
 

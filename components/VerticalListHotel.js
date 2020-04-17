@@ -8,10 +8,14 @@ const VerticalListHotel = (props) => {
 		<View style={styles.container}>
 			<Card onPress={props.comk} style={styles.card}>
 				<View style={{ flexDirection: "row" }}>
-					<Image source={{ uri: props.link }} style={styles.image} />
+					<Card.Cover source={{ uri: props.link }} style={styles.image} />
 					<View style={{ flexDirection: "column" }}>
-						<Text style={styles.title}>{props.name}</Text>
-						<Text style={styles.below}> yeah </Text>
+						{/* <Text style={styles.title}>{props.name}</Text>
+						<Text style={styles.below}> yeah </Text> */}
+						<Card.Content>
+							<Title>{props.name}</Title>
+							<Paragraph>Location</Paragraph>
+						</Card.Content>
 					</View>
 				</View>
 			</Card>
