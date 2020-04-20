@@ -10,11 +10,9 @@ const VerticalListHotel = (props) => {
 				<View style={{ flexDirection: "row" }}>
 					<Card.Cover source={{ uri: props.link }} style={styles.image} />
 					<View style={{ flexDirection: "column" }}>
-						{/* <Text style={styles.title}>{props.name}</Text>
-						<Text style={styles.below}> yeah </Text> */}
 						<Card.Content>
 							<Title>{props.name}</Title>
-							<Paragraph>Location</Paragraph>
+							<Paragraph>{props.location}</Paragraph>
 						</Card.Content>
 					</View>
 				</View>
@@ -25,16 +23,10 @@ const VerticalListHotel = (props) => {
 
 const styles = StyleSheet.create({
 	container: {
-		// flex: 1,
-		// flexDirection:'row',
-		// justifyContent: 'center',
 		paddingTop: 5,
-		// backgroundColor: '#ecf0f1',
 		padding: 8,
-		// ShadowColor: "rgba(0, 0, 0, 0.75)",
 	},
 	card: {
-		// width: "100%",
 		height: 150,
 		elevation: 2,
 	},
