@@ -55,6 +55,7 @@ const DiningScreen = ({ navigation }) => {
 						link="https://picsum.photos/700"
 						name="Louis Backyard"
 					/>
+
 					<VerticalList
 						link="https://picsum.photos/106"
 						name="Louis Backyard"
