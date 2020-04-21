@@ -8,20 +8,32 @@ import { CATEGORIES } from "../data/data";
 import Category from "../models/category";
 
 const HotelScreen = ({ navigation }) => {
-	const [link, setLink] = useState("https://picsum.photos/700");
-	const [name, setName] = useState("UTA");
-	const [location, setLocation] = useState("Arlington");
+	// const [link, setLink] = useState("https://picsum.photos/700");
+	// const [name, setName] = useState("UTA");
+	// const [location, setLocation] = useState("Arlington");
 
-	// console.log(CATEGORIES.color);
+	const [sdata, setSdata] = useState({
+		link: "https://picsum.photos/700",
+		name: "UTA",
+		location: "Arlington",
+	});
+	const { link, name, location } = sdata;
+
 	const renderdata = () => {
 		return CATEGORIES.map((data, index) => {
-			// return console.log(data.color, index);
+			const { id, name, location } = data;
 			return (
 				<VerticalListHotel
-					// link={link}
-					key={data.id}
-					name={data.color}
-					location={data.id}
+					// link={data}
+					key={index}
+					name={name}
+					location={location}
+					comk={() => {
+						navigation.navigate("Details", {
+							route_name: { name },
+							route_location: { location },
+						});
+					}}
 				/>
 			);
 		});
