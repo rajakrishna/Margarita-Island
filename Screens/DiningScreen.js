@@ -1,16 +1,9 @@
 import * as React from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
-import Cardview from "./Cardview";
-import Btn from "./Button";
-import LinearGradient from "react-native-linear-gradient";
-// import { NavigationContainer } from '@react-navigation/native';
+import Cardview from "../components/Cardview";
 import { createStackNavigator } from "@react-navigation/stack";
-import Details from "./Details";
-import VerticalList from "./VerticalList";
-// import { white } from 'react-native-paper/lib/typescript/src/styles/colors';
-
-// EXPO linear graident check later
-//https://docs.expo.io/versions/latest/sdk/linear-gradient/
+import Details from "../components/Details";
+import VerticalList from "../components/VerticalList";
 
 const DiningScreen = ({ navigation }) => {
 	return (

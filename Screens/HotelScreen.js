@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Details from "./Details";
-import VerticalListHotel from "./VerticalListHotel";
+import Details from "../components/Details";
+import VerticalListHotel from "../components/VerticalListHotel";
 
 import { CATEGORIES } from "../data/data";
 import Category from "../models/category";

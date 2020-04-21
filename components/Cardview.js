@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Text, View, StyleSheet, Image } from "react-native";
 import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
-import { TouchableOpacity } from "react-native-gesture-handler";
 
 const CardView = (props) => {
 	return (

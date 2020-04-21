@@ -1,5 +1,6 @@
 import * as React from "react";
 import { View, Text, Button } from "react-native";
+import { Avatar, Card, Title, Paragraph } from "react-native-paper";
 
 const Details = ({ route, navigation }) => {
 	const { route_name, route_location } = route.params;

@@ -2,12 +2,12 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { MaterialCommunityIcons } from "react-native-vector-icons";
-import HotelScreen from "./HotelScreen";
-import ProfileScreen from "./ProfileScreen";
-import DiningScreen from "./DiningScreen";
-import ServiceScreen from "./ServiceScreen";
-import EventScreen from "./EventScreen";
-import IslandScreen from "./IslandScreen";
+import HotelScreen from "../Screens/HotelScreen";
+import ProfileScreen from "../Screens/ProfileScreen";
+import DiningScreen from "../Screens/DiningScreen";
+import ServiceScreen from "../Screens/ServiceScreen";
+import EventScreen from "../Screens/EventScreen";
+import IslandScreen from "../Screens/IslandScreen";
 
 const Tab = createMaterialBottomTabNavigator();
 

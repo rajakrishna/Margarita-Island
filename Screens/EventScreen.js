@@ -1,6 +1,6 @@
 import * as React from "react";
 import { View, Text, Button, ScrollView, StyleSheet } from "react-native";
-import CardEvents from "./CardEvents";
+import CardEvents from "../components/CardEvents";
 
 const EventScreen = () => {
 	return (
