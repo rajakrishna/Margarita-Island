@@ -9,10 +9,6 @@ import { CATEGORIES } from "../data/data";
 import Category from "../models/category";
 
 const HotelScreen = ({ navigation }) => {
-	// const [link, setLink] = useState("https://picsum.photos/700");
-	// const [name, setName] = useState("UTA");
-	// const [location, setLocation] = useState("Arlington");
-
 	const [sdata, setSdata] = useState({
 		link: "https://picsum.photos/700",
 		name: "UTA",
