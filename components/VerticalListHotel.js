@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Text, View, StyleSheet, Image } from "react-native";
 import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
-import { TouchableOpacity } from "react-native-gesture-handler";
 
 const VerticalListHotel = (props) => {
 	return (
@@ -14,6 +13,9 @@ const VerticalListHotel = (props) => {
 							<Title>{props.name}</Title>
 							<Paragraph>{props.location}</Paragraph>
 						</Card.Content>
+						<Card.Actions>
+							<Button onPress={props.buttonp}>Book</Button>
+						</Card.Actions>
 					</View>
 				</View>
 			</Card>

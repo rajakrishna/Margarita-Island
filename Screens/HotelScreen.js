@@ -3,6 +3,7 @@ import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Details from "../components/Details";
 import VerticalListHotel from "../components/VerticalListHotel";
+import PaymentScreen from "../components/PaymentScreen";
 
 import { CATEGORIES } from "../data/data";
 import Category from "../models/category";
@@ -70,6 +71,7 @@ const App = () => {
 				options={{ headerShown: false }}
 			/>
 			<Stack.Screen name="Details" component={Details} />
+			<Stack.Screen name="PaymentScreen" component={PaymentScreen} />
 		</Stack.Navigator>
 	);
 };
