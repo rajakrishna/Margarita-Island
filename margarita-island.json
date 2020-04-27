@@ -1,0 +1,25 @@
+{
+  "items": {
+    "Hotels": {
+      "-M5azz2_VT1CWNwueQ81": {
+        "image": "https://picsum.photos/700",
+        "location": "Austin",
+        "name": "TAM"
+      },
+      "first": {
+        "image": "https://picsum.photos/600",
+        "location": "Arlington",
+        "name": "UtA"
+      },
+      "second": {
+        "image": "https://picsum.photos/500",
+        "location": "North Texas",
+        "name": "UT North"
+      }
+    },
+    "Events": {},
+    "Islands": {},
+    "Dining": {}
+
+  }
+}
