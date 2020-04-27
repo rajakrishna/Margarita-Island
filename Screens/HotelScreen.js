@@ -40,7 +40,7 @@ const HotelScreen = ({ navigation }) => {
 		<View style={styles.container}>
 			<Text>Hotels</Text>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<VerticalListHotel
+				{/* <VerticalListHotel
 					link={link}
 					name={name}
 					location={location}
@@ -50,7 +50,7 @@ const HotelScreen = ({ navigation }) => {
 							route_location: { location },
 						});
 					}}
-				/>
+				/> */}
 				{renderdata()}
 			</ScrollView>
 		</View>

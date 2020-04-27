@@ -6,8 +6,8 @@ import BottomNavigation from "./components/BottomNavigation";
 import Fbase from "./Fbase";
 
 const App = () => {
-	// return <BottomNavigation />;
-	return <Fbase />;
+	return <BottomNavigation />;
+	// return <Fbase />;
 };
 
 export default App;

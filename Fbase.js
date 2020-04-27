@@ -1,6 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import ItemComponent from "./Yoyo.js";
 import VerticalListHotel from "./components/VerticalListHotel";
 
 import { db } from "./Config";

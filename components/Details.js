@@ -1,6 +1,6 @@
 import * as React from "react";
 import { View, Text, Button, StyleSheet, ScrollView } from "react-native";
-import { Avatar, Card, Title, Paragraph } from "react-native-paper";
+import { Avatar, Card, Title, Chip } from "react-native-paper";
 import VerticalListHotel from "./VerticalListHotel";
 import PaymentScreen from "./PaymentScreen";
 

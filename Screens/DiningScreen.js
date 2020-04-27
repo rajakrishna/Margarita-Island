@@ -13,16 +13,16 @@ const DiningScreen = ({ navigation }) => {
 				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 					<Cardview
 						link="https://picsum.photos/700"
-						name="Louis Backyard"
+						name="Xian Yong"
 						comk={() => {
 							navigation.navigate("Details");
 						}}
 					/>
-					<Cardview link="https://picsum.photos/100" name="Xbox" />
-					<Cardview link="https://picsum.photos/1000" name="Texas Long" />
-					<Cardview link="https://picsum.photos/101" name="KFC" />
-					<Cardview link="https://picsum.photos/110" name="Mc D" />
-					<Cardview link="https://picsum.photos/104" name="Pho" />
+					<Cardview link="https://picsum.photos/100" name="Eric" />
+					<Cardview link="https://picsum.photos/1000" name="Lampardo" />
+					<Cardview link="https://picsum.photos/101" name="Kesier" />
+					<Cardview link="https://picsum.photos/110" name="Martien" />
+					{/* <Cardview link="https://picsum.photos/104" name="Elaine" /> */}
 				</ScrollView>
 				<Text>Top Hotels</Text>
 				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
@@ -37,11 +37,11 @@ const DiningScreen = ({ navigation }) => {
 					<Cardview link="https://picsum.photos/1000" name="Texas Long" />
 					<Cardview link="https://picsum.photos/101" name="KFC" />
 					<Cardview link="https://picsum.photos/110" name="Mc D" />
-					<Cardview link="https://picsum.photos/104" name="Pho" />
+					{/* <Cardview link="https://picsum.photos/104" name="Pho" /> */}
 				</ScrollView>
 
 				<View>
-					<Text>Top Chefs</Text>
+					<Text>Hotels</Text>
 					{/* <ScrollView showsVerticalScrollIndicator={false}> */}
 
 					<VerticalList

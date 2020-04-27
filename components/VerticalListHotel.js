@@ -1,6 +1,13 @@
 import * as React from "react";
 import { Text, View, StyleSheet, Image } from "react-native";
-import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
+import {
+	Avatar,
+	Button,
+	Card,
+	Title,
+	Paragraph,
+	Chip,
+} from "react-native-paper";
 
 const VerticalListHotel = (props) => {
 	return (
@@ -12,9 +19,53 @@ const VerticalListHotel = (props) => {
 						<Card.Content>
 							<Title>{props.name}</Title>
 							<Paragraph>{props.location}</Paragraph>
+							<View
+								style={{
+									// flex: 1,
+									flexDirection: "row",
+									alignItems: "center",
+									justifyContent: "flex-start",
+									// flexShrink: 1,
+									// flexWrap: 1,
+								}}
+							>
+								<Chip
+									mode="flat"
+									disabled={true}
+									style={styles.chip1}
+									textStyle={styles.chip1}
+								>
+									Wi-Fi
+								</Chip>
+								<Chip
+									mode="flat"
+									disabled={true}
+									style={styles.chip}
+									textStyle={styles.chip}
+								>
+									Breakfast
+								</Chip>
+								<Chip
+									mode="flat"
+									disabled={true}
+									style={styles.chip}
+									textStyle={styles.chip}
+								>
+									Shower
+								</Chip>
+							</View>
 						</Card.Content>
+
 						<Card.Actions>
-							<Button onPress={props.buttonp}>Book</Button>
+							<Button
+								style={styles.buttonp}
+								// color="white"
+								mode="contained"
+								dark={true}
+								onPress={props.buttonp}
+							>
+								Book
+							</Button>
 						</Card.Actions>
 					</View>
 				</View>
@@ -50,6 +101,26 @@ const styles = StyleSheet.create({
 		width: 150,
 		height: 150,
 		// borderRadius: 20,
+	},
+	chip: {
+		marginLeft: 5,
+		marginTop: 5,
+		fontSize: 12,
+		// flexDirection: "column",
+		// flexShrink: 1,
+		// flex: 1,
+		// flexShrink: 1,
+		// padding: 0,
+	},
+	chip1: {
+		marginTop: 5,
+		fontSize: 12,
+	},
+	buttonp: {
+		// marginLeft: "60%",
+		// backgroundColor: "green",
+		color: "white",
+		// width: "70%",
 	},
 });
 
