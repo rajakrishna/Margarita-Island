@@ -5,15 +5,7 @@ import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
 const CardView = (props) => {
 	return (
 		<View style={styles.container}>
-			<Card
-				onPress={props.comk}
-				style={{
-					// borderRadius: 20,
-					// width: "100%",
-					// paddingBottom: 10,
-					elevation: 2,
-				}}
-			>
+			<Card onPress={props.comk} style={styles.card}>
 				{/* <View style={{ alignItems: "center" }}> */}
 				<Card.Cover source={{ uri: props.link }} style={styles.image} />
 				{/* </View> */}
@@ -25,27 +17,28 @@ const CardView = (props) => {
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
-		justifyContent: "center",
-		alignContent: "center",
+		// flex: 1,
+		// justifyContent: "center",
+		// alignContent: "center",
 		paddingTop: 15,
+		flexDirection: "row",
+		// width: 150,
+		// height: 150,
 		// paddingTop: 35,
 	},
-	image: {
-		// width: "100%",
-		// height: 150,
-		// borderRadius: 20,
+	card: {
+		flex: 1,
 	},
 
 	paragraph: {
 		marginBottom: 4,
 		position: "absolute",
-		bottom: 0,
+		bottom: "40%",
 		// left: "40%",
 		// backgroundColor: 'white',
 		alignContent: "center",
 		color: "white",
-		fontSize: 17,
+		fontSize: 40,
 		fontWeight: "bold",
 		alignSelf: "center",
 		textShadowColor: "rgba(0, 0, 0, 0.35)",

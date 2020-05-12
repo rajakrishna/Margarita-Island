@@ -32,8 +32,7 @@ const DiningScreen = ({ navigation }) => {
 			return (
 				<VerticalList
 					key={index}
-					// link={image}
-
+					link="https://i.ibb.co/VCLdwJp/guillermina-restaurant.jpg"
 					name={name}
 					location={location}
 				/>
@@ -48,7 +47,7 @@ const DiningScreen = ({ navigation }) => {
 				<Cardview
 					key={index}
 					name={name}
-					link="https://picsum.photos/700"
+					link="https://i.ibb.co/chTvvth/reza-biazar-e-Sjm-ZW97c-H8-unsplash.jpg"
 					comk={() => {
 						navigation.navigate("ChefDetails", {
 							route_name: { name },
@@ -65,12 +64,12 @@ const DiningScreen = ({ navigation }) => {
 	return (
 		<View style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<Text>Top Chefs</Text>
+				<Text style={{ fontSize: 18, alignSelf: "center" }}>Top Chefs</Text>
 				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 					{renderchefs()}
 				</ScrollView>
 				<View>
-					<Text>Restaurants</Text>
+					<Text style={{ fontSize: 18, alignSelf: "center" }}>Restaurants</Text>
 					{renderdata()}
 				</View>
 			</ScrollView>

@@ -8,6 +8,7 @@ import {
 	Paragraph,
 	Chip,
 } from "react-native-paper";
+import Icon from "react-native-vector-icons/Entypo";
 
 const VerticalListHotel = (props) => {
 	return (
@@ -15,10 +16,12 @@ const VerticalListHotel = (props) => {
 			<Card onPress={props.comk} style={styles.card}>
 				<View style={{ flexDirection: "row" }}>
 					<Card.Cover source={{ uri: props.link }} style={styles.image} />
-
 					<Card.Content>
-						<Title styles={styles.title}>{props.name}</Title>
-						<Paragraph>{props.location}</Paragraph>
+						<Title style={styles.title}>{props.name}</Title>
+						<Text style={{ color: "#2d767f" }}>
+							<Icon name="location-pin" size={15} />
+							{props.location}
+						</Text>
 					</Card.Content>
 				</View>
 			</Card>
@@ -41,9 +44,9 @@ const styles = StyleSheet.create({
 	title: {
 		margin: 2,
 		paddingTop: 5,
-		paddingLeft: 10,
-		fontSize: 25,
-		fontWeight: "bold",
+		paddingLeft: 2,
+		fontSize: 18,
+		// fontWeight: "bold",
 		textAlign: "center",
 	},
 

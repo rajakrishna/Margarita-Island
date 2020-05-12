@@ -30,13 +30,35 @@ const ChefDetails = ({ route, navigation }) => {
 			>
 				<ScrollView showsVerticalScrollIndicator={false}>
 					<Card style={styles.card}>
-						<Card.Cover source={{ uri: "https://picsum.photos/700" }} />
+						<Card.Cover
+							source={{
+								uri:
+									"https://i.ibb.co/chTvvth/reza-biazar-e-Sjm-ZW97c-H8-unsplash.jpg",
+							}}
+							style={{
+								flex: 1,
+								width: "40%",
+								// justifyContent: "center",
+								// alignContent: "center",
+								// alignItems: "center",
+								alignSelf: "center",
+							}}
+						/>
 						{/* <Card.Title title={name} subtitle={location} /> */}
 						{/* <Card.Title subtitle={location} /> */}
-						<Text>ABOUT</Text>
-						<Text>{about}</Text>
-						<Text>RECIPE</Text>
-						<Text>{recipe_name}</Text>
+						<View
+							style={{
+								alignItems: "center",
+								paddingLeft: 60,
+								paddingRight: 60,
+								paddingTop: 10,
+							}}
+						>
+							<Text style={{ fontSize: 24 }}>ABOUT</Text>
+							<Text>{about}</Text>
+							<Text style={{ fontSize: 24 }}>Recipe</Text>
+							<Text>{recipe_name}</Text>
+						</View>
 					</Card>
 
 					{/* <Text>Rooms</Text> */}
@@ -48,8 +70,16 @@ const ChefDetails = ({ route, navigation }) => {
 
 const styles = StyleSheet.create({
 	card: {
-		padding: 10,
+		paddingTop: 10,
+
+		// paddingLeft: 10,
 		// borderRadius: 15,
+		flex: 1,
+		width: "100%",
+		justifyContent: "center",
+		alignContent: "center",
+		alignSelf: "center",
+		// alignItems: "center",
 	},
 	container: {
 		// borderRadius: 15,

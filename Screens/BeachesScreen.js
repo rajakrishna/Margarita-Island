@@ -24,7 +24,7 @@ const BeachsScreen = ({ navigation }) => {
 				<BeachCard
 					key={index}
 					name={name}
-					link="https://picsum.photos/900"
+					link="https://i.ibb.co/SPKMMHx/elizeu-dias-RN6ts8-IZ4-0-unsplash.jpg"
 					comk={() => {
 						navigation.navigate("BeachDetails", {
 							route_name: { name },
@@ -37,11 +37,12 @@ const BeachsScreen = ({ navigation }) => {
 			);
 		});
 	};
+	// <a href="https://ibb.co/M922Gwf"><img src="" alt="playa-el-agua" border="0"></a>
 	return (
 		<View style={styles.container}>
 			{/* <View style={styles.child}> */}
 			<ScrollView showsVerticalScrollIndicator={false}>
-				<Text>Beaches</Text>
+				{/* <Text>Beaches</Text> */}
 				{renderbeaches()}
 			</ScrollView>
 			{/* </View> */}

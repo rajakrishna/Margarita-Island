@@ -25,12 +25,19 @@ const ChefDetails = ({ route, navigation }) => {
 				<ScrollView showsVerticalScrollIndicator={false}>
 					<Card style={styles.card}>
 						<Card.Cover
-							source={{ uri: "https://picsum.photos/900" }}
+							source={{
+								uri:
+									"https://i.ibb.co/SPKMMHx/elizeu-dias-RN6ts8-IZ4-0-unsplash.jpg",
+							}}
 							style={styles.image}
 						/>
-						<Text>Name: {name}</Text>
+						<Text style={{ fontSize: 18, alignSelf: "center" }}>
+							Name: {name}
+						</Text>
 						{/* <Text>{name}</Text> */}
-						<Text>Location: {location}</Text>
+						<Text style={{ fontSize: 18, alignSelf: "center" }}>
+							Location: {location}
+						</Text>
 						{/* <Text>Google Maps Link: </Text> */}
 					</Card>
 

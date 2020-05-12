@@ -18,7 +18,7 @@ const BottomNavigation = () => {
 				initialRouteName="Beaches"
 				activeColor="#e2f3f5"
 				inactiveColor="#3e3636"
-				barStyle={{ backgroundColor: "#2d6cdf" }}
+				barStyle={{ backgroundColor: "#3d6cb9" }}
 				shifting={true}
 				keyboardHidesNavigationBar={true}
 				// barStyle={{ size:100 }}

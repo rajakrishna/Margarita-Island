@@ -32,12 +32,15 @@ const Details = ({ route, navigation }) => {
 					<Card.Cover source={{ uri: image }} />
 					{/* <Card.Title title={name} subtitle={location} /> */}
 					{/* <Card.Title subtitle={location} /> */}
-					<Text>ABOUT</Text>
-					<Text>{about}</Text>
 				</Card>
-				<Text>AMENITIES</Text>
-				<Text>{amenities}</Text>
-				<Text>Rooms</Text>
+
+				<Text style={{ fontSize: 24, alignSelf: "center" }}>ABOUT</Text>
+				<Text style={{ paddingLeft: 10, paddingRight: 10 }}>{about}</Text>
+				<Text style={{ fontSize: 24, alignSelf: "center" }}>AMENITIES</Text>
+				<Text style={{ paddingLeft: 10, paddingRight: 10 }}>{amenities}</Text>
+				<Text style={{ fontSize: 24, alignSelf: "center", paddingTop: 10 }}>
+					Available Rooms
+				</Text>
 
 				<Bedrooms
 					// link={link}
@@ -73,7 +76,7 @@ const Details = ({ route, navigation }) => {
 
 const styles = StyleSheet.create({
 	card: {
-		marginTop: 10,
+		// marginTop: 10,
 		elevation: 2,
 	},
 	container: {

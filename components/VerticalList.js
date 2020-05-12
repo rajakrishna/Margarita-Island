@@ -2,6 +2,7 @@ import * as React from "react";
 import { Text, View, StyleSheet, Image } from "react-native";
 import { Avatar, Button, Card, Title, Paragraph } from "react-native-paper";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import Icon from "react-native-vector-icons/Entypo";
 
 const VerticalList = (props) => {
 	let size = "100%";
@@ -14,12 +15,27 @@ const VerticalList = (props) => {
 			>
 				<View style={{ flexDirection: "row" }}>
 					<Card.Cover source={{ uri: props.link }} style={styles.image} />
-					<View style={{ flexDirection: "column" }}>
-						<Card.Content>
-							<Title>{props.name}</Title>
-							<Paragraph>{props.location}</Paragraph>
-						</Card.Content>
-					</View>
+					{/* <View style={{ flexDirection: "column" }}> */}
+					<Card.Content>
+						{/* <View
+						style={{
+							flex: 1,
+							flexDirection: "row",
+							flexWrap: "wrap",
+							paddingLeft: 10,
+						}}
+					> */}
+						<Title style={styles.title}>{props.name}</Title>
+						{/* <Paragraph>{props.location}</Paragraph> */}
+
+						<Text style={{ color: "#2d767f" }}>
+							{/* {"\n"} */}
+							<Icon name="location-pin" size={15} />
+							{props.location}
+						</Text>
+						{/* </View> */}
+					</Card.Content>
+					{/* </View> */}
 				</View>
 			</Card>
 		</View>
@@ -39,9 +55,9 @@ const styles = StyleSheet.create({
 	title: {
 		margin: 2,
 		paddingTop: 5,
-		paddingLeft: 10,
-		fontSize: 24,
-		fontWeight: "bold",
+		paddingLeft: 2,
+		fontSize: 17,
+		// fontWeight: "bold",
 		textAlign: "center",
 	},
 
