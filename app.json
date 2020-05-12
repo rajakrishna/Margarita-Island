@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Blank Template",
-    "slug": "real",
+    "name": "Margarita Island",
+    "slug": "Margarita_Island",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -11,9 +11,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app_icon2.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/app_icon2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
