@@ -18,7 +18,6 @@ const Fbase = () => {
 		});
 	});
 
-	// const { todos } = this.state;
 	console.log(todos);
 	const renderdata = () => {
 		return todos.map((items, index) => {

@@ -1,25 +1,178 @@
 {
   "items": {
     "Hotels": {
-      "-M5azz2_VT1CWNwueQ81": {
-        "image": "https://picsum.photos/700",
-        "location": "Austin",
-        "name": "TAM"
+      "1": {
+        "image": "https://firebasestorage.googleapis.com/v0/b/margarita-island-8e170.appspot.com/o/hesperia-eden-club-area.jpg?alt=media&token=0e4f385f-5538-4999-9829-235102ff7132",
+        "location": "Playa el Agua",
+        "name": "Hesperia Eden Club",
+        "about": "The Hesperia Edén Club Hotel is located on a 3 km beach on the Venezuelan island known as Isla Margarita, “the pearl of the Caribbean”. If you prefer to look beyond the beach, you’re just half an hour from the shops in Porlamar. ",
+        "amenities": "Free parking, Free internet, Pool, Fitness Center with Gym / Workout Room, Free breakfast, Beach, Tennis court,Spa"
       },
-      "first": {
-        "image": "https://picsum.photos/600",
-        "location": "Arlington",
-        "name": "UtA"
+      "2": {
+        "image": "https://firebasestorage.googleapis.com/v0/b/margarita-island-8e170.appspot.com/o/beach-view.jpg?alt=media&token=422cdc9f-45d5-4d99-8f85-395601aa12f3",
+        "location": "Porlamar",
+        "name": "Beach View Palace",
+        "about": "Beach View Palace is an apartment building with 26 apartments of 5 different types. For information please send us an email with your name, countru, number of persons and the dates of your visit and within very short time we'll send you all the information.",
+        "amenities": "Free parking, Free internet, Pool, Fitness Center with Gym / Workout Room, Free breakfast, Beach, Tennis court,Spa"
       },
-      "second": {
-        "image": "https://picsum.photos/500",
-        "location": "North Texas",
-        "name": "UT North"
+      "3": {
+        "image": "https://firebasestorage.googleapis.com/v0/b/margarita-island-8e170.appspot.com/o/lodeg%20l%20aracdia.jpg?alt=media&token=4a2e78a1-2e98-4fd0-84b4-067e4e274991",
+        "location": "Pedro Gonzales",
+        "name": "Lodge La Arcadia",
+        "about": "Small and cozy inn between the beach and the mountain, with (5) rooms all with private bathroom, air conditioning, television with cable, and corridors with chinchorro in front of each room.",
+        "amenities": "Free parking, Free internet, Pool, Fitness Center with Gym / Workout Room, Free breakfast, Beach, Tennis court,Spa"
+      },
+      "4": {
+        "image": "https://firebasestorage.googleapis.com/v0/b/margarita-island-8e170.appspot.com/o/posada-casa-las-trinitarias.jpg?alt=media&token=dd8383e9-994f-4f9b-ba81-022a38982df1",
+        "location": "EL Cardon",
+        "name": "Posada Casa Las Trinitarias",
+        "about": "Beautifull country house surounded by nature and close to the virgin Beach, extenses garden and plantation, small refreshing pool. Dinnig room opened to nature, we serve international and native venezuelan food. Intimate place with just 6 big and confortable rooms",
+        "amenities": "Free parking, Free internet, Pool, Fitness Center with Gym / Workout Room, Free breakfast, Beach, Tennis court,Spa"
       }
     },
     "Events": {},
-    "Islands": {},
-    "Dining": {}
+    "Beaches": {
+      "1": {
+        "name": "GUACUCO",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "2": {
+        "name": "Av. 31 de Julio",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "3": {
+        "name": "CARDON",
+        "location": "ANTOLIN DEL CAMPO",
+        "image": ""
+      },
+      "4": {
+        "name": "PUERTO ABAJO",
+        "location": "ANTOLIN DEL CAMPO",
+        "image": ""
+      },
+      "5": {
+        "name": "PARGUITO",
+        "location": "ANTOLIN DEL CAMPO",
+        "image": ""
+      },
+      "6": {
+        "name": "EL AGUA",
+        "location": "ANTOLIN DEL CAMPO",
+        "image": ""
+      },
+      "7": {
+        "name": "MANZANILLO",
+        "location": "ANTOLIN DEL CAMPO",
+        "image": ""
+      },
+      "8": {
+        "name": "EL YAQUE",
+        "location": "DIAZ",
+        "image": ""
+      },
+      "9": {
+        "name": "LA ISLETA",
+        "location": "GARCIA",
+        "image": ""
+      }
 
+
+    },
+    "Dining": {
+      "1": {
+        "name": "LA CURVA DE PACHO",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "2": {
+        "name": "MAR BLU",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "3": {
+        "name": "EL LANGAR DE LA ASUNCION",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "4": {
+        "name": "RANCHO DE BEATRIZ",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "5": {
+        "name": "GUILLERMINA RESTAURANTE",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "6": {
+        "name": "LA GUACHAFITA",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "7": {
+        "name": "EL RANCHO DE KIKO",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "8": {
+        "name": "LA CHURUATA DE LA MARINA",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "9": {
+        "name": "CHORIPANZON MARGARITA",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "10": {
+        "name": "CASA JARDIN",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "11": {
+        "name": "PIZERIA MARGARITA",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "12": {
+        "name": "PARADOR CAMPESTRE SOLAR DE SALAMANCA",
+        "location": "ARISMENDI",
+        "image": ""
+      },
+      "13": {
+        "name": "DONDE JOTA",
+        "location": "ARISMENDI",
+        "image": ""
+      }
+    },
+    "Chefs": {
+      "1": {
+        "name": "Carmen \"Sanga\" Marín",
+        "about": "Carmen is the fifth of thirteen siblings, and due to the precariousness of the time, she saw the need to accompany her mother in raising them. Those were difficult times, so he had to learn to sew, to cook, to walk the beach of the bay of Juan Griego every day in search of sustenance, he carried water on his head when he came by barge, other times helping the people who disembarked or he boarded the “Rosa Eugenia” and “Maria Rosario” boats that made the journey from the Isla de Margarita to the mainland.",
+        "recipe_name": "La Doña del Comodoro"
+      },
+      "2": {
+        "name": "ESTHER GONZÁLEZ",
+        "about": "Esther González born in Juan Griego, traveled around the world, calls herself “the queen of sweet pepper”, and has been cooking for 18 years in Pedro González a small town north of the island of Margarita in “La Casa de Esther”, recognized as one of the best restaurants on the island, with succulent dishes that pride Venezuelan margariteña gastronomy and delicatessen that add hundreds of visitors to taste.",
+        "recipe_name": "Arroz con carachana salada"
+      },
+      "3": {
+        "name": "RUBÉN SANTIAGO",
+        "about": "Rubén Santiago was born in Sabana Grande, Trujillo, on March 15, 1946. Cook, bartender, storyteller and seller of illusions, for 45 years he has been residing on Margarita Island. ",
+        "recipe_name": "Receta del Pastel de Chucho "
+      },
+      "4": {
+        "name": "ISABEL “LA NEGRA”  MARÍN ",
+        "about": "Better known as La Negra in Boca de Rio. Its restaurant is called Friomar and it is one of those places where you can enjoy the margariteño flavors of yesteryear.",
+        "recipe_name": "RECETA DEL CUAJAO DE CHUCHO MARGARITEÑO"
+      },
+      "5": {
+        "name": "PILAR CABRERA",
+        "about": "Chef Pilar Cabrera directs the kitchen of the Posada Casa Mejillón. He has done an admirable job in the eco-sustainable entrepreneurship of the La Guardia mussels.",
+        "recipe_name": "ASOPADO DE VIUDA"
+      }
+    }
   }
 }

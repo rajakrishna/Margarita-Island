@@ -12,20 +12,12 @@ const VerticalList = (props) => {
 				onPress={props.comk}
 				style={{ borderRadius: 8, width: size, height: 100, elevation: 1 }}
 			>
-				{/* <View style={{ alignItems: 'center', }}> */}
-
 				<View style={{ flexDirection: "row" }}>
-					{/* <Image
-          source={{uri: props.link }}  
-          style={styles.image}
-      /> */}
 					<Card.Cover source={{ uri: props.link }} style={styles.image} />
 					<View style={{ flexDirection: "column" }}>
-						{/* <Text style={styles.title}>{props.name}</Text>
-						<Text style={styles.below}> yeah </Text> */}
 						<Card.Content>
 							<Title>{props.name}</Title>
-							<Paragraph>Location</Paragraph>
+							<Paragraph>{props.location}</Paragraph>
 						</Card.Content>
 					</View>
 				</View>

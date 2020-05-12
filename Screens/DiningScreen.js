@@ -1,73 +1,70 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import Cardview from "../components/Cardview";
 import { createStackNavigator } from "@react-navigation/stack";
 import Details from "../components/Details";
 import VerticalList from "../components/VerticalList";
+import { db } from "../Config";
 
+let itemsRef = db.ref("/items/Dining");
+let itemsRef2 = db.ref("/items/Chefs");
 const DiningScreen = ({ navigation }) => {
+	let [diningdata, setDiningdata] = useState([]);
+	let [chef, setChef] = useState([]);
+
+	useEffect(() => {
+		itemsRef.on("value", (snapshot) => {
+			let data = snapshot.val();
+			let items = Object.values(data);
+			setDiningdata((diningdata = items));
+		});
+		itemsRef2.on("value", (snapshot) => {
+			let data = snapshot.val();
+			let items = Object.values(data);
+			setChef((chef = items));
+		});
+	}, []);
+
+	const renderdata = () => {
+		return diningdata.map((items, index) => {
+			const { name, location, image } = items;
+			return (
+				<VerticalList
+					key={index}
+					// link={image}
+
+					name={name}
+					location={location}
+				/>
+			);
+		});
+	};
+	const renderchefs = () => {
+		return chef.map((items, index) => {
+			const { name } = items;
+			return (
+				<Cardview key={index} name={name} link="https://picsum.photos/700" />
+			);
+		});
+	};
+
 	return (
 		<View style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
 				<Text>Top Chefs</Text>
 				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-					<Cardview
+					{/* <Cardview
 						link="https://picsum.photos/700"
 						name="Xian Yong"
 						comk={() => {
 							navigation.navigate("Details");
 						}}
-					/>
-					<Cardview link="https://picsum.photos/100" name="Eric" />
-					<Cardview link="https://picsum.photos/1000" name="Lampardo" />
-					<Cardview link="https://picsum.photos/101" name="Kesier" />
-					<Cardview link="https://picsum.photos/110" name="Martien" />
-					{/* <Cardview link="https://picsum.photos/104" name="Elaine" /> */}
+					/> */}
+					{renderchefs()}
 				</ScrollView>
-				<Text>Top Hotels</Text>
-				<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-					<Cardview
-						link="https://picsum.photos/700"
-						name="Louis Backyard"
-						comk={() => {
-							navigation.navigate("Details");
-						}}
-					/>
-					<Cardview link="https://picsum.photos/100" name="Xbox" />
-					<Cardview link="https://picsum.photos/1000" name="Texas Long" />
-					<Cardview link="https://picsum.photos/101" name="KFC" />
-					<Cardview link="https://picsum.photos/110" name="Mc D" />
-					{/* <Cardview link="https://picsum.photos/104" name="Pho" /> */}
-				</ScrollView>
-
 				<View>
-					<Text>Hotels</Text>
-					{/* <ScrollView showsVerticalScrollIndicator={false}> */}
-
-					<VerticalList
-						link="https://picsum.photos/700"
-						name="Louis Backyard"
-					/>
-
-					<VerticalList
-						link="https://picsum.photos/106"
-						name="Louis Backyard"
-					/>
-					<VerticalList
-						link="https://picsum.photos/706"
-						name="Louis Backyard"
-					/>
-					<VerticalList link="https://picsum.photos/70" name="Louis Backyard" />
-					<VerticalList
-						link="https://picsum.photos/106"
-						name="Louis Backyard"
-					/>
-					<VerticalList
-						link="https://picsum.photos/706"
-						name="Louis Backyard"
-					/>
-
-					{/* </ScrollView> */}
+					<Text>Restaurants</Text>
+					{renderdata()}
 				</View>
 			</ScrollView>
 		</View>

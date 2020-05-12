@@ -17,56 +17,9 @@ const VerticalListHotel = (props) => {
 					<Card.Cover source={{ uri: props.link }} style={styles.image} />
 					<View style={{ flexDirection: "column" }}>
 						<Card.Content>
-							<Title>{props.name}</Title>
+							<Title styles={styles.title}>{props.name}</Title>
 							<Paragraph>{props.location}</Paragraph>
-							<View
-								style={{
-									// flex: 1,
-									flexDirection: "row",
-									alignItems: "center",
-									justifyContent: "flex-start",
-									// flexShrink: 1,
-									// flexWrap: 1,
-								}}
-							>
-								<Chip
-									mode="flat"
-									disabled={true}
-									style={styles.chip1}
-									textStyle={styles.chip1}
-								>
-									Wi-Fi
-								</Chip>
-								<Chip
-									mode="flat"
-									disabled={true}
-									style={styles.chip}
-									textStyle={styles.chip}
-								>
-									Breakfast
-								</Chip>
-								<Chip
-									mode="flat"
-									disabled={true}
-									style={styles.chip}
-									textStyle={styles.chip}
-								>
-									Shower
-								</Chip>
-							</View>
 						</Card.Content>
-
-						<Card.Actions>
-							<Button
-								style={styles.buttonp}
-								// color="white"
-								mode="contained"
-								dark={true}
-								onPress={props.buttonp}
-							>
-								Book
-							</Button>
-						</Card.Actions>
 					</View>
 				</View>
 			</Card>
@@ -88,7 +41,7 @@ const styles = StyleSheet.create({
 		margin: 2,
 		paddingTop: 5,
 		paddingLeft: 10,
-		fontSize: 24,
+		fontSize: 25,
 		fontWeight: "bold",
 		textAlign: "center",
 	},
@@ -101,26 +54,6 @@ const styles = StyleSheet.create({
 		width: 150,
 		height: 150,
 		// borderRadius: 20,
-	},
-	chip: {
-		marginLeft: 5,
-		marginTop: 5,
-		fontSize: 12,
-		// flexDirection: "column",
-		// flexShrink: 1,
-		// flex: 1,
-		// flexShrink: 1,
-		// padding: 0,
-	},
-	chip1: {
-		marginTop: 5,
-		fontSize: 12,
-	},
-	buttonp: {
-		// marginLeft: "60%",
-		// backgroundColor: "green",
-		color: "white",
-		// width: "70%",
 	},
 });
 

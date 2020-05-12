@@ -15,7 +15,7 @@ const BottomNavigation = () => {
 	return (
 		<NavigationContainer>
 			<Tab.Navigator
-				initialRouteName="Dining"
+				initialRouteName="Hotel"
 				activeColor="#e2f3f5"
 				inactiveColor="#3e3636"
 				barStyle={{ backgroundColor: "#2d6cdf" }}
@@ -49,9 +49,9 @@ const BottomNavigation = () => {
 					name="Islands"
 					component={IslandScreen}
 					options={{
-						tabBarLabel: "Island",
+						tabBarLabel: "Beaches",
 						tabBarIcon: ({ color }) => (
-							<MaterialCommunityIcons name="tree" color={color} size={26} />
+							<MaterialCommunityIcons name="beach" color={color} size={26} />
 						),
 					}}
 				/>
@@ -66,7 +66,7 @@ const BottomNavigation = () => {
 						),
 					}}
 				/>
-				<Tab.Screen
+				{/* <Tab.Screen
 					name="Services"
 					component={ServiceScreen}
 					options={{
@@ -75,9 +75,9 @@ const BottomNavigation = () => {
 							<MaterialCommunityIcons name="settings" color={color} size={26} />
 						),
 					}}
-				/>
+				/> */}
 
-				<Tab.Screen
+				{/* <Tab.Screen
 					name="Profile"
 					component={ProfileScreen}
 					options={{
@@ -90,7 +90,7 @@ const BottomNavigation = () => {
 							/>
 						),
 					}}
-				/>
+				/> */}
 			</Tab.Navigator>
 		</NavigationContainer>
 	);

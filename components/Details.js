@@ -5,17 +5,37 @@ import VerticalListHotel from "./VerticalListHotel";
 import PaymentScreen from "./PaymentScreen";
 
 const Details = ({ route, navigation }) => {
-	const { route_name, route_location } = route.params;
+	const {
+		route_name,
+		route_location,
+		route_image,
+		route_about,
+		route_amenities,
+	} = route.params;
 	const name = JSON.parse(JSON.stringify(route_name.name));
 	const location = JSON.parse(JSON.stringify(route_location.location));
+	const image = JSON.parse(JSON.stringify(route_image.image));
+	const about = JSON.parse(JSON.stringify(route_about.about));
+	const amenities = JSON.parse(JSON.stringify(route_amenities.amenities));
+	const value = JSON.stringify(route.params.title);
+	React.useLayoutEffect(() => {
+		navigation.setOptions({
+			title: value === "" ? "No title" : name,
+		});
+	}, [navigation, value]);
+
 	return (
 		<View style={styles.container}>
 			<ScrollView showsVerticalScrollIndicator={false}>
 				<Card style={styles.card}>
-					<Card.Cover />
-					<Card.Title title={name} subtitle={location} />
+					<Card.Cover source={{ uri: image }} />
+					{/* <Card.Title title={name} subtitle={location} /> */}
+					{/* <Card.Title subtitle={location} /> */}
+					<Text>ABOUT</Text>
+					<Text>{about}</Text>
 				</Card>
-
+				<Text>AMENITIES</Text>
+				<Text>{amenities}</Text>
 				<Text>Rooms</Text>
 
 				<VerticalListHotel
@@ -38,7 +58,7 @@ const styles = StyleSheet.create({
 		elevation: 2,
 	},
 	container: {
-		paddingTop: 25,
+		// paddingTop: 25,
 		backgroundColor: "white",
 	},
 });
