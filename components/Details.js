@@ -3,6 +3,7 @@ import { View, Text, Button, StyleSheet, ScrollView } from "react-native";
 import { Avatar, Card, Title, Chip } from "react-native-paper";
 import VerticalListHotel from "./VerticalListHotel";
 import PaymentScreen from "./PaymentScreen";
+import Bedrooms from "./Bedrooms";
 
 const Details = ({ route, navigation }) => {
 	const {
@@ -38,10 +39,28 @@ const Details = ({ route, navigation }) => {
 				<Text>{amenities}</Text>
 				<Text>Rooms</Text>
 
-				<VerticalListHotel
+				<Bedrooms
 					// link={link}
-					name="cost"
-					location="2B/1Ba"
+					name="4B/3Ba"
+					location="Our most famous suite with multiple bathrooms"
+					buttonp={() => {
+						// navigation.navigate("App", { screen: "PaymentScreen" });
+						navigation.navigate("PaymentScreen");
+					}}
+				/>
+				<Bedrooms
+					// link={link}
+					name="3B/2Ba"
+					location="Unique with art installations from all over the world"
+					buttonp={() => {
+						// navigation.navigate("App", { screen: "PaymentScreen" });
+						navigation.navigate("PaymentScreen");
+					}}
+				/>
+				<Bedrooms
+					// link={link}
+					name="4B/3Ba"
+					location="Presidential Suite with butler service"
 					buttonp={() => {
 						// navigation.navigate("App", { screen: "PaymentScreen" });
 						navigation.navigate("PaymentScreen");

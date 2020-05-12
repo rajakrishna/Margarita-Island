@@ -15,11 +15,19 @@ const VerticalListHotel = (props) => {
 			<Card onPress={props.comk} style={styles.card}>
 				<View style={{ flexDirection: "row" }}>
 					<Card.Cover source={{ uri: props.link }} style={styles.image} />
-
-					<Card.Content>
+					{/* <Card.Content style={{ flexDirection: "row" }}> */}
+					<View
+						style={{
+							flex: 1,
+							flexDirection: "row",
+							flexWrap: "wrap",
+							paddingLeft: 10,
+						}}
+					>
 						<Title styles={styles.title}>{props.name}</Title>
 						<Paragraph>{props.location}</Paragraph>
-					</Card.Content>
+					</View>
+					{/* </Card.Content> */}
 				</View>
 			</Card>
 		</View>

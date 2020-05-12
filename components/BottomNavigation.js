@@ -7,7 +7,7 @@ import ProfileScreen from "../Screens/ProfileScreen";
 import DiningScreen from "../Screens/DiningScreen";
 import ServiceScreen from "../Screens/ServiceScreen";
 import EventScreen from "../Screens/EventScreen";
-import IslandScreen from "../Screens/IslandScreen";
+import BeachesScreen from "../Screens/BeachesScreen";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -15,7 +15,7 @@ const BottomNavigation = () => {
 	return (
 		<NavigationContainer>
 			<Tab.Navigator
-				initialRouteName="Hotel"
+				initialRouteName="Beaches"
 				activeColor="#e2f3f5"
 				inactiveColor="#3e3636"
 				barStyle={{ backgroundColor: "#2d6cdf" }}
@@ -46,8 +46,8 @@ const BottomNavigation = () => {
 					}}
 				/>
 				<Tab.Screen
-					name="Islands"
-					component={IslandScreen}
+					name="Beaches"
+					component={BeachesScreen}
 					options={{
 						tabBarLabel: "Beaches",
 						tabBarIcon: ({ color }) => (
