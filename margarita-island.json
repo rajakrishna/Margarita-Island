@@ -30,7 +30,38 @@
         "amenities": "Free parking, Free internet, Pool, Fitness Center with Gym / Workout Room, Free breakfast, Beach, Tennis court,Spa"
       }
     },
-    "Events": {},
+    "Events": {
+      "0": {
+        "name": "Hackathon",
+        "location": "Arlington",
+        "image": ""
+      },
+      "1": {
+        "name": "Hackathon",
+        "location": "Arlington",
+        "image": ""
+      },
+      "2": {
+        "name": "Hackathon",
+        "location": "Arlington",
+        "image": ""
+      },
+      "3": {
+        "name": "Hackathon",
+        "location": "Arlington",
+        "image": ""
+      },
+      "4": {
+        "name": "Hackathon",
+        "location": "Arlington",
+        "image": ""
+      },
+      "5": {
+        "name": "Hackathon",
+        "location": "Arlington",
+        "image": ""
+      }
+    },
     "Beaches": {
       "1": {
         "name": "GUACUCO",

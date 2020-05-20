@@ -3,9 +3,7 @@ import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Details from "../components/Details";
 import VerticalListHotel from "../components/VerticalListHotel";
-import PaymentScreen from "../components/PaymentScreen";
 
-import { CATEGORIES } from "../data/data";
 import { db } from "../Config";
 
 let itemsRef = db.ref("/items/Hotels");
@@ -83,7 +81,7 @@ const App = () => {
 				component={Details}
 				options={({ route }) => ({ title: route.params.title })}
 			/>
-			<Stack.Screen name="PaymentScreen" component={PaymentScreen} />
+			{/* <Stack.Screen name="PaymentScreen" component={PaymentScreen} /> */}
 		</Stack.Navigator>
 	);
 };

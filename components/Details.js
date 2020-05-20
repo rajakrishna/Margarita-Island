@@ -28,8 +28,6 @@ const Details = ({ route, navigation }) => {
 			<ScrollView showsVerticalScrollIndicator={false}>
 				<Card style={styles.card}>
 					<Card.Cover source={{ uri: image }} />
-					{/* <Card.Title title={name} subtitle={location} /> */}
-					{/* <Card.Title subtitle={location} /> */}
 				</Card>
 
 				<Text style={{ fontSize: 24, alignSelf: "center" }}>ABOUT</Text>

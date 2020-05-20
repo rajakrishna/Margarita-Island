@@ -7,7 +7,7 @@ const CardEvents = (props) => {
 	return (
 		<Card onPress={props.comk} style={styles.card}>
 			<Card.Cover source={{ uri: props.link }} />
-			<Card.Title title="Name" subtitle="Location" />
+			<Card.Title title={props.name} subtitle={props.location} />
 		</Card>
 	);
 };
